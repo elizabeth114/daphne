@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## This will be daphine's website
 
 You can use the [editor on GitHub](https://github.com/elizabeth114/daphne/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 

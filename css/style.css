@@ -1,8 +1,13 @@
+@import "colors.css";
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
+}
+
+.pale-r {
+  background-color: var(--pale-red);
 }
 
 /* Create a Parallax Effect */
@@ -15,19 +20,19 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('./images/artsy_daphne.JPG');
+  background-image: url('../images/artsy_daphne.JPG');
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("./images/beach_daphne.JPG");
+  background-image: url("../images/beach_daphne.JPG");
   min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("./images/nature_daphne.jpeg");
+  background-image: url("../images/nature_daphne.jpeg");
   min-height: 400px;
 }
 

@@ -1,13 +1,16 @@
 @import "colors.css";
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: 'Cabin', Helvetica, Arial, sans-serif;}
 body, html {
   height: 100%;
-  color: #777;
-  line-height: 1.8;
+  color: var(--dark);
 }
 
-.pale-r {
-  background-color: var(--pale-red);
+.reviews {
+  background-image: url('../images/custom-v2.PNG');
+  background-attachment: fixed;
+  background-size: 900px;
+  background-color: var(--neutral);
 }
 
 /* Create a Parallax Effect */
@@ -45,9 +48,93 @@ body, html {
   object-fit: cover;
 }
 
+.title{
+  margin-left:auto;
+  margin-right:auto;
+  background: var(--neutral);
+  color:var(--dark);
+  /* box-shadow: 5px 5px 3px 5px var(--shadow); */
+  border-radius: 5px;
+  display:flex;
+  justify-content: space-between;
+  /* width:60%; */
+  /* clip-path: polygon(0% 18%, 1% 16%, 2% 15%, 4% 14%, 10% 11%, 11% 10%, 12% 8%, 13% 6%, 14% 4%, 16% 2%, 18% 1%, 20% 1%, 22% 1%, 23% 1%, 24% 2%, 26% 3%, 28% 4%, 29% 6%, 30% 8%, 31% 10%, 32% 11%, 32% 14%, 34% 16%, 34% 18%, 35% 21%, 35% 23%, 35% 24%, 36% 26%, 36% 29%, 35% 30%, 34% 32%, 35% 33%, 36% 34%, 38% 35%, 40% 36%, 42% 37%, 43% 36%, 44% 36%, 46% 35%, 47% 35%, 49% 33%, 51% 33%, 52% 33%, 54% 33%, 56% 32%, 58% 32%, 60% 31%, 62% 31%, 64% 30%, 65% 30%, 66% 30%, 67% 30%, 69% 30%, 71% 31%, 73% 31%, 75% 32%, 77% 34%, 78% 35%, 80% 37%, 82% 39%, 85% 40%, 89% 40%, 91% 38%, 93% 37%, 95% 35%, 97% 34%, 99% 32%, 99% 34%, 98% 36%, 97% 37%, 95% 39%, 94% 40%, 93% 42%, 92% 43%, 90% 43%, 88% 44%, 86% 44%, 85% 44%, 83% 44%, 81% 43%, 79% 41%, 78% 40%, 76% 39%, 77% 41%, 78% 43%, 79% 46%, 79% 49%, 80% 52%, 81% 55%, 82% 59%, 82% 62%, 83% 64%, 84% 66%, 85% 67%, 85% 70%, 85% 74%, 85% 77%, 85% 80%, 85% 83%, 86% 87%, 85% 90%, 83% 90%, 82% 90%, 80% 90%, 79% 89%, 79% 87%, 80% 85%, 81% 83%, 81% 79%, 81% 76%, 80% 73%, 79% 71%, 78% 69%, 76% 68%, 74% 66%, 72% 62%, 70% 59%, 68% 59%, 68% 62%, 69% 64%, 70% 67%, 69% 69%, 68% 71%, 67% 72%, 66% 73%, 65% 75%, 64% 77%, 63% 78%, 62% 80%, 61% 81%, 59% 81%, 56% 81%, 56% 80%, 56% 77%, 58% 76%, 59% 75%, 61% 72%, 63% 70%, 63% 66%, 63% 65%, 61% 65%, 60% 66%, 59% 67%, 57% 68%, 56% 69%, 54% 69%, 52% 70%, 51% 71%, 49% 72%, 48% 73%, 46% 74%, 45% 75%, 44% 76%, 43% 77%, 41% 78%, 40% 78%, 38% 79%, 37% 82%, 37% 85%, 37% 87%, 37% 90%, 38% 94%, 38% 97%, 37% 99%, 36% 100%, 35% 100%, 33% 100%, 31% 100%, 30% 99%, 30% 98%, 30% 95%, 32% 93%, 32% 90%, 32% 87%, 31% 85%, 32% 81%, 29% 80%, 28% 82%, 28% 83%, 27% 85%, 28% 88%, 28% 90%, 27% 92%, 26% 93%, 25% 93%, 24% 94%, 22% 94%, 20% 94%, 19% 93%, 18% 92%, 19% 90%, 20% 89%, 21% 88%, 23% 87%, 24% 84%, 23% 82%, 23% 80%, 22% 77%, 21% 75%, 20% 73%, 20% 71%, 18% 69%, 17% 66%, 17% 65%, 17% 63%, 16% 61%, 16% 58%, 16% 57%, 15% 53%, 15% 51%, 15% 48%, 16% 46%, 16% 44%, 16% 41%, 16% 38%, 16% 37%, 16% 34%, 16% 31%, 15% 30%, 14% 29%, 12% 29%, 11% 28%, 8% 28%, 6% 28%, 5% 26%, 3% 24%, 2% 22%, 1% 20%); */
+  text-align: center;
+  /* background-image: url('../images/white-waves.png');
+  background-size: 100%; */
+  opacity: 95%;
+}
+
+title-text{
+  padding-left:2%;
+  padding-right:2%;
+  padding-bottom:1%;
+  padding-top:1%;
+  display:inline-block;
+  font-family: 'Impact', sans-serif;
+  font-weight: 900;
+  font-size:60px;
+  color:var(--lavender-pink)
+}
+
+.front-half{
+  left:0px;
+  object-fit:contain;
+}
+
+.back-half{
+  right:0px;
+  object-fit:contain;
+}
+
+.stats-bar{
+  background: var(--neutral)
+}
+
+.review-text{
+  color:var(--dark);
+  font-size: large;
+
+}
+
+.review-section{
+  width:50%;
+  color: var(--dark);
+  padding:2%;
+  box-shadow: 5px 5px 3px var(--shadow);
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+  /* background-image: url('../images/white-waves.png');
+  background-size: 200%; */
+  justify-content: center;
+  background-color: var(--neutral);
+  opacity: 95%;
+}
+
+.parallax {
+  /* Set a specific height */
+  min-height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: 100%;
+  background-repeat: repeat-x;
+  background-size: auto 400px;
+  position: relative;
+}
+
+
+.review-title-text{
+  color:var(--cold-purple);
+  font-weight:bolder;
+  font-size: large;
+
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1, .bgimg-2, .bgimg-3 .parallax{
     background-attachment: scroll;
     min-height: 400px;
   }

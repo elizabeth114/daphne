@@ -1,2 +1,36 @@
-element {--pale-red:#FFCCCB;
-    --white: #FFFFFF}
+:root {
+--neutral: #FFFFFF;
+--dark: #0E1C36;
+--accent-2: #95273A;
+--white: #F9FBF2;
+--accent-1: #AFCBFF;
+--shadow: #3F4F6E;
+--pastel-green: #81d46f;
+--regent-st-blue: #a4d4e4;
+--wistful: #aca4d4;
+--prelude: #bcb3e3;
+--equator: #e3cb64;
+--lavender-pink: #fba3c3;
+--tea-green: #c6f2be;
+--cold-purple: #b4abdc;
+}
+
+.background-accent-1{
+    background: var(--accent-1);
+}
+
+.background-accent-2{
+    background: var(--accent-2);
+}
+
+.background-white{
+    background: var(--white);
+}
+
+.background-dark{
+    background: var(--dark);
+}
+
+.background-neutral{
+    background: var(--neutral);
+}

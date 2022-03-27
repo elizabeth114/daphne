@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<script src="./review.js" type="text/javascript" defer></script>
+<html>
+    <head>
+      <title>Daphne the Wiener</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/arrow.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <style>
+          /* First image (Logo. Full height) */
+      .bgimg-r {
+        background-image: url('../images/${image_url}');
+        min-height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      </style>
+          <div class="w3-top">
+          <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="./review_main.html#review-1" class="w3-bar-item w3-button w3-hide-small"></i> BAILEY'S BLANKET</a>
+            <a href="./review_main.html#review-2" class="w3-bar-item w3-button w3-hide-small"></i> LED SIGN</a>
+            <!-- <a href="./review_main.html#review-3" class="w3-bar-item w3-button w3-hide-small"></i> REVIEW 3</a>
+            <a href="./review_main.html#review-4" class="w3-bar-item w3-button w3-hide-small"></i> REVIEW 4</a> -->
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+            </a>
+          </div>
+
+          <!-- Navbar on small screens -->
+          <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="./review_main.html#review-1" class="w3-bar-item w3-button" onclick="toggleFunction()">REVIEW 1</a>
+            <a href="./review_main.html#review-2" class="w3-bar-item w3-button" onclick="toggleFunction()">REVIEW 2</a>
+            <!-- <a href="./review_main.html#review-3" class="w3-bar-item w3-button" onclick="toggleFunction()">REVIEW 3</a>
+            <a href="./review_main.html#review-4" class="w3-bar-item w3-button" onclick="toggleFunction()">REVIEW 4</a> -->
+        </div>
+        </div>
+      </div>
+      </head>
+      <body class="reviews">
+        <div class="parallax" style="background-image: url('../images/baileys_blanket.JPG'); padding-top:50px;">
+        <review-template id="review-1"
+            website='https://baileysblanket.com/'
+            product_name='Bailey<span>&#39;</span>s Blanket'
+            rating="4"
+            sponsored='Received item for free as a gift from the company! No posting requirements.'
+            review_text='We love our new blanket! We got to pick an image for the blanket and the background color.  Daphne<span>&#39;</span>s feet were covered in the image by grass and the artist was able to seemlessly create feet for the blanket! It is very soft and both mom and Daphne enjoy snuggling with it.  The image is great and looks just like an artistic representation of the original image!'/>
+        </div>
+        <div class="parallax" style="background-image: url('../images/led_sign.jpg')">
+        <review-template id="review-2"
+            website='https://www.amazon.com/dp/B09PHD6RFZ/ref=cm_sw_r_oth_api_i_73S2113QPC9CV7QX0FN5?_encoding=UTF8&psc=1'
+            alternative_link="amazon"
+            product_name='Custom LED Sign'
+            sponsored='nope'
+            price="$31.63"
+            rating="4"
+            review_text='We wanted a pink LED sign that said Daphne<span>&#39;</span>s name as a decoration for our living room(aka the babe cave).  Most LED signs were pretty expensive so when we came across this one on amazon we were very excited! We got to pick the color, font, and text and then placed our order.  It came quicker than expected and even has 3 different light levels! Would recommend if you<span>&#39;</span>re looking for a LED sign. '/>
+        </div>
+    </body>
+</html>

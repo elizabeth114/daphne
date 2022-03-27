@@ -29,8 +29,8 @@
               <i class="fa fa-bars"></i>
             </a>
             <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
-            <a href="./review_main.html#review-1" class="w3-bar-item w3-button w3-hide-small"></i> BAILEY'S BLANKET</a>
-            <a href="./review_main.html#review-2" class="w3-bar-item w3-button w3-hide-small"></i> LED SIGN</a>
+            <a href="./review_main.html#review-1" class="w3-bar-item w3-button w3-hide-small"></i>BAILEY'S BLANKET</a>
+            <a href="./review_main.html#review-2" class="w3-bar-item w3-button w3-hide-small"></i>LED SIGN</a>
             <!-- <a href="./review_main.html#review-3" class="w3-bar-item w3-button w3-hide-small"></i> REVIEW 3</a>
             <a href="./review_main.html#review-4" class="w3-bar-item w3-button w3-hide-small"></i> REVIEW 4</a> -->
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
@@ -39,8 +39,8 @@
 
           <!-- Navbar on small screens -->
           <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="./review_main.html#review-1" class="w3-bar-item w3-button" onclick="toggleFunction()">REVIEW 1</a>
-            <a href="./review_main.html#review-2" class="w3-bar-item w3-button" onclick="toggleFunction()">REVIEW 2</a>
+            <a href="./review_main.html#review-1" class="w3-bar-item w3-button" onclick="toggleFunction()">BAILEY'S BLANKET</a>
+            <a href="./review_main.html#review-2" class="w3-bar-item w3-button" onclick="toggleFunction()">LED SIGN</a>
             <!-- <a href="./review_main.html#review-3" class="w3-bar-item w3-button" onclick="toggleFunction()">REVIEW 3</a>
             <a href="./review_main.html#review-4" class="w3-bar-item w3-button" onclick="toggleFunction()">REVIEW 4</a> -->
         </div>
@@ -67,4 +67,26 @@
             review_text='We wanted a pink LED sign that said Daphne<span>&#39;</span>s name as a decoration for our living room(aka the babe cave).  Most LED signs were pretty expensive so when we came across this one on amazon we were very excited! We got to pick the color, font, and text and then placed our order.  It came quicker than expected and even has 3 different light levels! Would recommend if you<span>&#39;</span>re looking for a LED sign. '/>
         </div>
     </body>
+    <script>
+        // Change style of navbar on scroll
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        </script>
 </html>

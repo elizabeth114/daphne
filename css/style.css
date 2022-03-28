@@ -84,7 +84,13 @@ title-text{
 }
 
 .stats-bar{
-  background: var(--neutral)
+  background-color: var(--tea-green)
+}
+
+.about-me{
+  background-image: url('../images/custom-v2.PNG');
+  background-size: 1000px;
+  background-repeat: repeat;
 }
 
 .review-text{
